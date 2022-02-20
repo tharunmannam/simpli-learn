@@ -1,0 +1,72 @@
+/*headercss start*/
+.header {
+  overflow: hidden;
+  background-image: url('https://1r65612jvqxn8fcup46pve6b-wpengine.netdna-ssl.com/wp-content/uploads/2016/04/clear-impact-state-government-background-header.jpg');
+  position: relative;
+  height: 230px;
+  width: 100%;
+  padding: 10px 10px;
+  color: white;
+  border-bottom-left-radius: 200% 100px;
+  border-bottom-right-radius: 0px;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 19px; 
+  line-height: 25px;
+  border-radius: 15px;
+}
+.header-right {
+  float: right;
+}
+
+.nav1:hover{
+  background-color: blue;
+  border-radius: 10px;
+}
+
+/*headercss end*/
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+body {
+	background: #f9f9f9;
+	font-family: "Roboto", sans-serif;
+}
+
+.shadow {
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+.profile-tab-nav {
+	min-width: 200px;
+}
+
+.tab-content {
+	flex: 1;
+}
+
+.form-group {
+	margin-bottom: 1.5rem;
+}
+
+.nav-pills a.nav-link {
+	padding: 15px 20px;
+	border-bottom: 1px solid #ddd;
+	border-radius: 0;
+	color: #333;
+}
+.nav-pills a.nav-link i {
+	width: 20px;
+}
+
+.img-circle img {
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	border: 5px solid #fff;
+}

@@ -1,0 +1,37 @@
+/*headercss start*/
+.header {
+  overflow: hidden;
+  background-image: url('https://1r65612jvqxn8fcup46pve6b-wpengine.netdna-ssl.com/wp-content/uploads/2016/04/clear-impact-state-government-background-header.jpg');
+  position: relative;
+  height: 230px;
+  width: 100%;
+  padding: 20px 10px;s
+  color: white;
+  border-bottom-left-radius: 200% 100px;
+  border-bottom-right-radius: 0px;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 20px; 
+  line-height: 25px;
+  border-radius: 15px;
+}
+.header-right {
+  float: right;
+}
+.header-left{
+	float: left;
+}
+
+.nav:hover{
+  background-color: blue;
+  border-radius: 10px;
+}
+
+
+/*headercss end*/

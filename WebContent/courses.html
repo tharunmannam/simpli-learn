@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.middle1{
+	background-image: url('https://image.freepik.com/free-photo/book-library-with-open-textbook_1150-5916.jpg');
+	/*filter: blur(5px);
+  	-webkit-filter: blur(5px);*/
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.heading1{
+	font-size: 80px;
+	padding: 13%;
+	color: yellow; 
+	margin-left: 400px;
+}
+
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 20%;
+  margin-left: 220px;
+  margin-top: -370px;
+  /*margin-bottom: 250px;*/
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 4px 80px;
+  font-size: 20px;
+}
+
+/*.button {
+	background-color: #4CAF50; 
+	border: none;
+	color: white;
+	padding: 13px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	
+	margin: 5px 2px;
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s; 
+	transition-duration: 0.4s;
+}
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}*/
+.button1 {
+	
+	background-color: red;
+	border: none;
+	color: white;
+	padding: 10px;
+	
+	text-decoration: none;
+	display: inline-block;
+	
+	margin: 2px -9px;
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s; 
+	transition-duration: 0.4s;
+	margin-left: -10px;
+}
+.button2 {
+	background-color: grey;
+	border: none;
+	color: white;
+	padding: 10px;
+	
+	text-decoration: none;
+	display: inline-block;
+	
+	margin: 2px -9px;
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s; 
+	transition-duration: 0.4s;
+	margin-left: 10px;
+}
+.button1:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+
+
+.matter{
+	/*margin: auto;*/
+	font-size: 20px;
+	margin-left: 620px;
+	margin-top: 60px;
+  width: 60%;
+  /*border: 5px solid #73AD21;*/
+  padding: 20px;
+}
+
+
+.checked {
+  color: orange;
+}
+
+
+
+/*headercss start*/
+.header {
+  overflow: hidden;
+  background-image: url('https://1r65612jvqxn8fcup46pve6b-wpengine.netdna-ssl.com/wp-content/uploads/2016/04/clear-impact-state-government-background-header.jpg');
+  position: relative;
+  height: 230px;
+  width: 100%;
+  padding: 20px 10px;s
+  color: white;
+  border-bottom-left-radius: 200% 100px;
+  border-bottom-right-radius: 0px;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 15px;
+}
+.header-right {
+  float: right;
+}
+.header-left{
+	float: left;
+}
+
+.nav:hover{
+  background-color: orangered;
+  border-radius: 10px;
+}
+
+/*headercss end*/
+</style>
+</head>
+<body>
+	<div class="header">
+	<div class="header-left">
+		<a style="font-size: 40px;"><b>Simply-Learn</b></a>
+	</div>
+  <div class="header-right"> 
+  <a>Hello, Admin</a>
+  <a href="admin.html" class="nav">Home</a>
+  <a href="courses.html" class="nav">Courses</a>
+  <a href="addstudent.html" class="nav">Add Student</a>
+  <a href="studentsdata.jsp" class="nav">Students List</a>
+  <a href="addmentor.jsp" class="nav">Add Mentor</a>
+  <a href="mentorsdata.jsp" class="nav">Mentors List</a>
+  <a href="Homepage.html" class="nav">Logout</a>
+  </div>
+
+</div>
+
+	<h1 style="font-size:70px;margin-left:750px;color:orange;"><b>Courses</b></h1>
+
+	<div>
+		<div class="matter">
+  			<p>Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions. The term may also be applied to any machine that exhibits traits associated with a human mind such as learning and problem-solving.The ideal characteristic of artificial intelligence is its ability to rationalize and take actions that have the best chance of achieving a specific goal. A subset of artificial intelligence is machine learning, which refers to the concept that computer programs can automatically learn from and adapt to new data without being assisted by humans. Deep learning techniques enable this automatic learning through the absorption of huge amounts of unstructured data such as text, images, or video.</p>
+  			<h4>Course Rating</h4>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star"></span>
+			<span class="fa fa-star"></span>
+
+			<h4><i class="fa fa-clock-o"></i><span>    </span>Course Duration : 1hr</h4>
+
+		</div>
+		<div class="card">
+  			<img src="https://previews.123rf.com/images/peshkov/peshkov1802/peshkov180200421/96458720-abstract-ai-lamp-on-starry-sky-background-artificial-intelligence-and-science-concept-3d-rendering.jpg" alt="Avatar" style="width:100%">
+  			<div class="container">
+  				<h3><b>Artificial Intelligence</b></h3> 
+    			<p>John McCarthy</p> 
+   				<!-- <button class="button1">Enroll</button> -->
+   				<!-- <p><button class="button2">Get Started</button></p> -->
+				<button class="button1">Enroll</button>
+				<button class="button2">Get Started</button>
+
+  			</div>
+
+		</div>
+		
+		<!-- <br> -->
+		<!-- <br><br><br> -->
+		<div class="matter">
+  			<p>Data science is an essential part of any industry today, given the massive amounts of data that are produced. Data science is one of the most debated topics in the industries these days. Its popularity has grown over the years, and companies have started implementing data science techniques to grow their business and increase customer satisfaction. In this article, we’ll learn what data science is, and how you can become a data scientist.Data science is the domain of study that deals with vast volumes of data using modern tools and techniques to find unseen patterns, derive meaningful information, and make business decisions. Data science uses complex machine learning algorithms to build predictive models.</p>
+  			<h4>Course Rating</h4>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star"></span>
+			<span class="fa fa-star"></span>
+
+			<h4><i class="fa fa-clock-o"></i><span>    </span>Course Duration : 2hrs</h4>
+		</div>
+		<div class="card">
+  			<img src="https://d6vdma9166ldh.cloudfront.net/media/images/4594dcf8-a8c5-4fa7-a6d4-bab2c9081041.jpg" alt="Avatar" style="width:100%">
+  			<div class="container">
+  				<p><b>Data Science</b></p> 
+    			<p>Peter Naur</p> 
+   				<button class="button1">Enroll</button>
+   				<button class="button2">Get Started</button>
+  			</div>
+		</div>
+		<br>
+		<br>
+		<br><br>
+
+		<div class="matter">
+  			<p>Blockchain is a system of recording information in a way that makes it difficult or impossible to change, hack, or cheat the system.A blockchain is essentially a digital ledger of transactions that is duplicated and distributed across the entire network of computer systems on the blockchain. Each block in the chain contains a number of transactions, and every time a new transaction occurs on the blockchain, a record of that transaction is added to every participant’s ledger. The decentralised database managed by multiple participants is known as Distributed Ledger Technology (DLT).This means if one block in one chain was changed, it would be immediately apparent it had been tampered with. </p>
+			<h4>Course Rating</h4>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star"></span>
+			<span class="fa fa-star"></span>
+
+			<h4><i class="fa fa-clock-o"></i><span>    </span>Course Duration : 3hrs</h4>
+		</div>
+
+		<div class="card">
+  			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5Uwx29-Xrm8p7dyKdPm-ze6vztLjAiNQ5TENhZXe7yhxJbQ3GUT9n2Hm7mLObYRJrLHI&usqp=CAU" alt="Avatar" style="width:100%">
+  			<div class="container">
+  				<h3><b>Block chaining</b></h3> 
+    			<p>Satoshi Nakamoto</p> 
+   				<button class="button1">Enroll</button>
+   				<button class="button2">Get Started</button>
+  			</div>
+		</div>
+		<br>
+		<br><br><br>
+
+		<div class="matter">
+  			<p>Cyber security refers to the body of technologies, processes, and practices designed to protect networks, devices, programs, and data from attack, damage, or unauthorized access. Cyber security may also be referred to as information technology security.Cyber security is important because government, military, corporate, financial, and medical organizations collect, process, and store unprecedented amounts of data on computers and other devices. A significant portion of that data can be sensitive information, whether that be intellectual property, financial data, personal information, or other types of data for which unauthorized access or exposure could have negative consequences. </p>
+			<h4>Course Rating</h4>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star"></span>
+			<span class="fa fa-star"></span>
+
+			<h4><i class="fa fa-clock-o"></i><span>    </span>Course Duration : 2hrs</h4>
+		</div>
+
+		<div class="card">
+  			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4FjlYZoglEAomI0zvbn0re3xm4eozfPuIjfR6ZHnSay1uqNAjQXGkPbpZ2EPa1Nspr8Y&usqp=CAU" alt="Avatar" style="width:100%">
+  			<div class="container">
+    			<h3><b>Ciber Security</b></h3> 
+    			<p>August Kerckhoffs</p> 
+   				<button class="button1">Enroll</button>
+   				<button class="button2">Get Started</button>
+  			</div>
+		</div>
+		<br>
+		<br><br><br>
+
+		<div class="matter">
+  			<p>Machine learning is a method of data analysis that automates analytical model building. It is a branch of artificial intelligence based on the idea that systems can learn from data, identify patterns and make decisions with minimal human intervention.While artificial intelligence (AI) is the broad science of mimicking human abilities, machine learning is a specific subset of AI that trains a machine how to learn. Watch this video to better understand the relationship between AI and machine learning. You'll see how these two technologies work, with useful examples and a few funny asides.Resurging interest in machine learning is due to the same factors that have made data mining and Bayesian analysis more popular than ever.</p>
+			<h4>Course Rating</h4>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star"></span>
+			<span class="fa fa-star"></span>
+
+			<h4><i class="fa fa-clock-o"></i><span>    </span>Course Duration : 1hr</h4>
+		</div>
+
+		<div class="card">
+  			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUjI6_XX20wBGbX5DDZFAoQReuzBG-0SUPCSbU_QTfTHCySPJuAmOdFfP9zXvsDpbSd3U&usqp=CAU" alt="Avatar" style="width:100%">
+  			<div class="container">
+    			<h3><b>Machine Learning</b></h3> 
+    			<p>Arthur Samuel</p> 
+   				<button class="button1">Enroll</button>
+   				<button class="button2">Get Started</button>
+  			</div>
+		</div>
+		<br>
+		<br><br>
+
+
+
+	</div>
+</body>
+</html>

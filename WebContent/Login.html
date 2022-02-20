@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Login </title>
+	<script type="text/javascript">
+		function check_validation(){
+			var user = document.myform.email.value;
+			var pwd = document.myform.password.value;
+			if(user==null || user==""){
+				alert("Username can't be null . Please enter username");
+				return false;
+			}
+			if(pwd.length==0 || pwd==null){
+				alert("Please enter password");
+				return false;
+			}
+		}
+	</script>
+	<style type="text/css">
+		body{
+			background-image: url('https://cdn.theculturetrip.com/wp-content/uploads/2015/05/book-809887_1280.jpg');
+			background-size: cover;
+			position: absolute;
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+		}
+		.loginbox{
+			width: 320px;
+			height: 420px;
+			background: brown;
+			color: white;
+			margin-top: 80px;
+			margin-left: 240px;
+			position: absolute;
+			box-sizing: border-box;
+			padding: 70px 30px;
+		}
+		.avatar{
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+			position: absolute;
+			top: -10%;
+			left: 35%;
+		}
+		h1{
+			margin: 0;
+			padding: 0 0 15px;
+			text-align: center;
+			font-size: 32px;
+		}
+		.loginbox p{
+			margin: 0;
+			padding: 0;
+			font-weight: bold;
+		}
+		.input-field{
+			width: 250px;
+			margin-bottom: 20px;
+			border: none;
+			border-bottom: 1px solid white;
+			background: transparent;
+			height: 40px;
+			color: white;
+			outline: none;
+			font-size: 15px;
+		}
+		.submit{
+			width: 250px;
+			margin-bottom: 20px;
+			border: none;
+			outline: none;
+			height: 30px;
+			background: orange;
+			color: white;
+			font-size: 15px;
+		}
+		.loginbox a{
+			font-size: 15px;
+			line-height: 20px;
+			color: white;
+		}
+		.submit:hover {
+		  background-color: blue;
+		}
+
+		.header{
+			float: right;
+			margin-top: 10px;
+			margin-left: 1250px;
+		}
+		.header a {
+			float: left;
+		  color: white;
+		  text-align: center;
+		  padding: 10px;
+		  text-decoration: none;
+		  font-size: 18px; 
+		  line-height: 25px;
+		  border-radius: 15px;
+		  margin-top: 10px;
+		}
+		
+		.nav:hover{
+  			background-color: orange;
+  			border-radius: 5px;
+		}
+		
+		.buttons{
+			margin-top: 170px;
+			margin-left: 200px;
+		}
+		.button {
+		  /*background-color: #4CAF50; /* Green */*/
+		  background-color: lightblue;
+		  border: none;
+		  color: white;
+		  padding: 7px 20px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 20px;
+		  margin: 4px 2px;
+		  cursor: pointer;
+		  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
+		}
+		.btn{
+			width: 200px;
+			background-color: red;
+			color: white;
+		}
+		.btncolor1{
+			background-color: orange;
+		}
+	</style>
+	
+</head>
+	<body>
+		<div class="header">
+			<a href="home.jsp" class="nav">Home</a>
+			<a href="Login.html" class="nav" style="background-color:orange;border-radius: 5px;">Login</a>
+			<a href="#" class="nav">Courses</a>
+			<a href="#" class="nav">Mentors</a>
+			<a href="#" class="nav">Contact Us</a>
+			<a href="#" class="nav">About</a>
+		</div>
+		
+		<div class="btns buttons">
+			<button class="tablink btn button btncolor1" onclick="openCity(event, 'student')">Student</button>
+			<button class="tablink btn button" onclick="openCity(event, 'mentor')">Mentor</button>
+		</div>
+		<div id="student" class="loginbox module">
+			<img src="avatar_img.png" class="avatar">
+			<h1> Student Login </h1>
+			<form name="myform" onsubmit="check_validation()" action="Login_servlet" method=post>
+				<p>Email</p>
+				<input type="email" class="input-field" name="email" placeholder="Email">
+				<p>Password</p>
+				<input type="password" class="input-field" name="password" placeholder="Password">
+				<input type="submit" class="submit" value="Login">
+				<a href="#">Forgotten password?</a><br>
+			</form>
+		</div>
+		<div id="mentor" class="loginbox module">
+			<img src="avatar_img.png" class="avatar">
+			<h1> Mentor Login </h1>
+			<form name="myform" onsubmit="check_validation()" action="Mentor_login" method=post>
+				<p>Email</p>
+				<input type="email" class="input-field" name="email" placeholder="Email">
+				<p>Password</p>
+				<input type="password" class="input-field" name="password" placeholder="Password">
+				<input type="submit" class="submit" value="Login">
+				<a href="#">Forgotten password?</a><br>
+			</form>
+		</div>
+		<script>
+		document.getElementsByClassName("tablink")[0].click();
+		function openCity(evt, each) {
+		  var i, x, tablinks;
+		  x = document.getElementsByClassName("module");
+		  for (i = 0; i < x.length; i++) {
+		    x[i].style.display = "none";
+		  }
+		  tablinks = document.getElementsByClassName("tablink");
+		  for (i = 0; i < x.length; i++) {
+		    tablinks[i].classList.remove("btncolor1");
+		  }
+		  document.getElementById(each).style.display = "block";
+		  evt.currentTarget.classList.add("btncolor1");
+		}
+	</script>
+	</body>
+</html>

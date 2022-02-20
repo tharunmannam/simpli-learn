@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	
+	
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+	<link rel="stylesheet" href="admincss.css" />
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript">
+
+	
+$(document).ready(function(){
+    $('.counter-value').each(function(){
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        },{
+            duration: 3000,
+            easing: 'swing',
+            step: function (now){
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+});
+
+
+	</script>
+</head>
+<body style="background: #f9f9f9;">
+	<div class="header">
+	<div class="header-left">
+		<a style="font-size: 40px;"><b>Simpli-Learn</b></a>
+	</div>
+  <div class="header-right"> 
+  <a>Hello, Admin</a>
+  <a href="admin.html" class="nav" style="background-color: red; border-radius: 10px;">Home</a>
+  <a href="admincoursepage.html" class="nav">Courses</a>
+  
+  <a href="addstudent.html" class="nav">Add Student</a>
+  <a href="studentsdata.jsp" class="nav">Students List</a>
+  <a href="addmentor.jsp" class="nav">Add Mentor</a>
+  <a href="mentorsdata.jsp" class="nav">Mentors List</a>
+  <a href="home.jsp" class="nav">Logout</a>
+  </div>
+
+</div>
+	<div class="container">
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="counter">
+                <div class="counter-icon">
+                    <i class="fa fa-globe"></i>
+                </div>
+                <div class="counter-content">
+                    <h3>Artificial Intelligence</h3>
+                    <span class="counter-value">100</span>
+                </div>
+            </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="col-md-3 col-sm-6">
+            <div class="counter blue">
+                <div class="counter-icon">
+                    <i class="fa fa-rocket"></i>
+                </div>
+                <div class="counter-content">
+                    <h3>Data Science</h3>
+                    <span class="counter-value">50</span>
+                </div>
+            </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <div class="col-md-3 col-sm-6">
+            <div class="counter blue">
+                <div class="counter-icon">
+                    <i class="fa fa-rocket"></i>
+                </div>
+                <div class="counter-content">
+                    <h3>Block chaining</h3>
+                    <span class="counter-value">80</span>
+                </div>
+            </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <div class="col-md-3 col-sm-6">
+            <div class="counter blue">
+                <div class="counter-icon">
+                    <i class="fa fa-rocket"></i>
+                </div>
+                <div class="counter-content">
+                    <h3>Ciber Security</h3>
+                    <span class="counter-value">150</span>
+                </div>
+            </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="col-md-3 col-sm-6">
+            <div class="counter blue">
+                <div class="counter-icon">
+                    <i class="fa fa-rocket"></i>
+                </div>
+                <div class="counter-content">
+                    <h3>Machine Learning</h3>
+                    <span class="counter-value">110</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+	
+	
+
+	
+</body>
+</html>
